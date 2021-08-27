@@ -1,10 +1,10 @@
 /*FOOTER*/
 
-.heading--texto-footer {
+.heading--texto-footer { /* TEXTO COM OS NOMES DOS PAISES */
     color: #fff;
 }
 
-.paragraph--texto-footer { 
+.paragraph--texto-footer {  /* TEXTO COM OS ENDEREÇOS DOS ESCRITORIOS */
     color: #fff;
     font-family: Circular Std Medium, sans-serif;
     font-size: .8rem;
@@ -12,3 +12,12 @@
     max-width: 16rem
 
 }
+
+.heading--texto-seguir { /* TEXTO SIGA A GENTE */
+    color: #fff;
+}
+
+.paragraph--texto-direitos { /* TEXTO DIREITOS RESERVADOS*/
+    color: #fff;
+}
+

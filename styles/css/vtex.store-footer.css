@@ -1,9 +1,9 @@
-.footerLayout {
-    background: #000;
-    
+.footerLayout--desktop {
+    background:darkmagenta;
+    position: relative;
 }
 
-/* .socialNetworkImage--facebook {
- background-image: url("assets/facebook.svg"); 
- background-repeat: no-repeat;  
-} */
+.footerLayout--mobile {
+    background: lightseagreen;
+    position: relative;
+}

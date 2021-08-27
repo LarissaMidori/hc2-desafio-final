@@ -1,22 +1,42 @@
 /* FOOTER */
 
-.flexRow--white-block {
-    background: #fff;
-    position: relative;
-    z-index: 0;
-    top: 200px;
-    overflow: hidden;
-
+/* ==== DESKTOP ==== */
+.flexRow--white-block{  /* FLEXROW CONTENDO A PARTE BRANCA E A IMAGEM DA LUMINARIA*/
+    background: rgb(190, 18, 18);
+    width: 100%;
 }
 
 .flexRow--escritorios {
     background: black;
-    position: relative;
-    z-index: 10;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: absolute;
+    width: 95%;
+    bottom: 25%;
 }
 
-.flexRow--social {
-    background: black;
-    position: relative;
-    z-index: 10;
+.flexCol--logo-footer {
+    margin-top: 25px;
 }
+
+.flexRow--social-idioma{
+    background: rgb(18, 190, 104);
+    width: 95%;
+    padding-top: 20px;
+}
+
+.flexCol--social-seguir {
+    padding-bottom: 20px;
+} 
+
+
+/* ==== MOBILE ==== */
+
+.flexRow--white-block-mobile { /* FLEXROW CONTENDO A PARTE BRANCA E A IMAGEM DA LUMINARIA*/
+    background: rgb(209, 89, 89);
+    width: 100%;
+}
+
+/* .flexCol--image-footer-mobile {
+}
+ */
