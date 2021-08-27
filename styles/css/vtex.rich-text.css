@@ -1,0 +1,14 @@
+/*FOOTER*/
+
+.heading--texto-footer {
+    color: #fff;
+}
+
+.paragraph--texto-footer { 
+    color: #fff;
+    font-family: Circular Std Medium, sans-serif;
+    font-size: .8rem;
+    margin-top: 1rem;
+    max-width: 16rem
+
+}

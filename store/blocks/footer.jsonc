@@ -1,0 +1,127 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": { 
+    "children": [
+      /* "flex-layout.row#footer" */
+      "flex-layout.row#image-footer", /* ROW COM A IMAGEM NO FOOTER */
+      "flex-layout.row#escritorios", /* ROW COM A PARTE DA LOCALIZACAO DOS ESCRITORIOS E LOGO */
+      "flex-layout.row#redes-sociais" /* ROW COM AS REDES SOCIAIS */
+    ]
+  },
+  "footer-layout.mobile": { 
+    "children": [
+    ]
+  },
+ 
+  "flex-layout.row#image-footer": { /* ROW COM A IMAGEM NO FOOTER */
+    "children": ["image#footer"],
+    "props": {
+      "blockClass": "white-block"
+    }  
+  },
+  "image#footer": {
+    "props": {
+      "maxWidth": "60%",
+      "src": "https://www.corebiz.ag/wp-content/themes/corebiz-global/assets/images/footer-background.jpg",
+      "blockClass": "image-footer"
+
+    }
+  },
+  "flex-layout.row#escritorios": { /* ROW COM A PARTE DA LOCALIZACAO DOS ESCRITORIOS E LOGO */
+    "children": [
+      "flex-layout.col#spacer",
+      "flex-layout.col#brasil",
+      "flex-layout.col#argentina",
+      "flex-layout.col#mexico",
+      "flex-layout.col#chile",
+      "flex-layout.col#logo-footer",
+      "flex-layout.col#spacer",
+      "flex-layout.col#spacer"
+    ],
+    "props": {
+      "verticalAlign": "CENTER",
+      "horizontalAlign": "CENTER",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "escritorios"
+    }
+  },
+  "flex-layout.col#brasil": { /* ESCRITORIO BRASIL */
+    "children": ["rich-text#brasil"]
+  },
+  "rich-text#brasil": {
+    "props": {
+      "blockClass": "texto-footer",
+      "textPosition": "CENTER",
+      "text":" ##### Brasil \n Avenida Andrômeda, 2000. Bloco 6 e 8 Alphaville SP \n \n R. Ifigenia Maria de Oliveira, 3793 - Jr. Piratininga Franca SP"   
+    }
+  },
+  "flex-layout.col#argentina": { /* ESCRITORIO ARGENTINA */
+    "children": ["rich-text#argentina"]
+  },
+  "rich-text#argentina": {
+    "props": {
+      "blockClass": "texto-footer",
+      "textPosition": "CENTER",
+      "text":" ##### Argentina \n Soler 5518, 3 Piso C1425BYF Palermo Hollywood CABA"   
+    }
+  },
+  "flex-layout.col#mexico": { /* ESCRITORIO MEXICO */
+    "children": ["rich-text#mexico"]
+  },
+  "rich-text#mexico": {
+    "props": {
+      "blockClass": "texto-footer",
+      "textPosition": "CENTER",
+      "text":" ##### Mexico \n Blvd. Miguel de Cervantes Saavedra 169, Granada, Miguel Hidalgo, 11520 Ciudad de México, CDMX"   
+    }
+  },
+  "flex-layout.col#chile": { /* ESCRITORIO CHILE */
+    "children": ["rich-text#chile"]
+  },
+  "rich-text#chile": {
+    "props": {
+      "blockClass": "texto-footer",
+      "textPosition": "CENTER",
+      "text":" ##### Chile \n Roberto del Río 1137, Providencia."   
+    }
+  },
+   "flex-layout.col#logo-footer":{ /* COL COM A IMAGEM DO LOGO */
+     "children": ["image#logo-footer"]
+  },
+  "image#logo-footer": {
+    "props": {
+      "width": 114,
+      "src": "assets/logo-footer.jpg",
+      "link": "https://www.corebiz.ag/pt/",
+      "blockClass": "logo-footer"
+    } 
+  },
+  "flex-layout.row#redes-sociais": { /* ROW COM AS REDES SOCIAIS */
+    "children": ["social-networks"],
+    "props": {
+      "blockClass": "social"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/corebizag/"
+        },
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/vtexonline/"
+        }
+      ]
+    }
+  }
+
+}
