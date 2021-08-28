@@ -1,1 +1,9 @@
 /* FOOTER */
+
+.imageElement--image-footer  { /* IMAGEM DESKTOP DAS LUMINARIAS */
+    padding-left: .5%;
+}
+
+.imageElement--image-footer-mobile  { /* IMAGEM MOBILE DAS LUMINARIAS */
+    padding-left: 5%;
+}

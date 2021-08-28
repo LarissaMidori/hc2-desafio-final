@@ -1,42 +1,101 @@
 /* FOOTER */
 
 /* ==== DESKTOP ==== */
+
 .flexRow--white-block{  /* FLEXROW CONTENDO A PARTE BRANCA E A IMAGEM DA LUMINARIA*/
-    background: rgb(190, 18, 18);
-    width: 100%;
+
+    background: #fff;
+    max-width: 99.8%;
 }
 
-.flexRow--escritorios {
-    background: black;
-    padding-top: 60px;
-    padding-bottom: 60px;
+.flexRow--escritorios { /* ENDERECOS ESCRITORIOS*/  
+    background: #000;
+    padding-top: 6%;
+    padding-bottom: 4%;
     position: absolute;
     width: 95%;
     bottom: 25%;
 }
 
-.flexCol--logo-footer {
-    margin-top: 25px;
+.flexCol--logo-footer { /* LOGO NO FOOTER */
+    margin-top: 2.5%;
 }
 
-.flexRow--social-idioma{
-    background: rgb(18, 190, 104);
+.flexRow--social-idioma{ /* REDES SOCIAIS, IDIOMAS E DIREITOS AUTORAIS */
+
+    background: rgb(117, 30, 30);
     width: 95%;
-    padding-top: 20px;
+    padding-top: 4%;
+    padding-bottom: 1%;
 }
 
-.flexCol--social-seguir {
-    padding-bottom: 20px;
+.flexRow--idiomas { /* ROW COM O MENU DE IDIOMAS */
+    padding-top: 2%;
+}
+
+.flexCol--social-seguir { /* ROW COM O TEXTO SIGA A GENTE */
+    display: flex;
+    align-items: center;
+    padding-bottom: 2%;
 } 
 
 
 /* ==== MOBILE ==== */
+
+.flexCol--image-footer-mobile { /* IMAGEM LUMINARIAS */
+    padding-left: 55%;
+}
 
 .flexRow--white-block-mobile { /* FLEXROW CONTENDO A PARTE BRANCA E A IMAGEM DA LUMINARIA*/
     background: rgb(209, 89, 89);
     width: 100%;
 }
 
-/* .flexCol--image-footer-mobile {
+.flexRow--logo-footer-mobile { /* LOGO NO FOOTER */
+    background: rgb(201, 116, 168);
+    padding-top: 6%;
+    padding-bottom: 8%;
+    position: absolute;
+    width: 100%;
+    top: 8%;
+    padding-left: 40%;
 }
- */
+
+.flexRow--escritorios-mobile { /* ENDERECOS ESCRITORIOS */
+    background: rgb(87, 109, 82);
+    padding-top: 60px;
+    padding-bottom: 20px;
+    width: 100%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.flexRow--escritorios-mobile2 { /* ENDERECOS ESCRITORIOS */
+    background: rgb(183, 136, 221);
+    padding-bottom: 40px;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.flexRow--seguir-mobile { /* ROW COM O TEXTO SIGA A GENTE */
+    display: flex;
+    text-align: center;
+}
+
+.flexRow--social-mobile { 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRow--idiomas-mobile { /* ROW COM O MENU DE IDIOMAS */
+    display: flex;
+    align-items: center;
+}
+
+.flexRow--direitos-mobile {
+    display: flex;
+    text-align: center;
+}
+

@@ -10,7 +10,9 @@
       "flex-layout.row#escritorios-br-ar-mobile", /* ROW COM A PARTE DA LOCALIZACAO DOS ESCRITORIOS BRASIL E ARGENTINA */
       "flex-layout.row#escritorios-mx-ch-mobile", /* ROW COM A PARTE DA LOCALIZACAO DOS ESCRITORIOS MEXICO E CHILE */
       "flex-layout.row#seguir-mobile",
-      "flex-layout.row#redes-sociais-mobile" /* ROW COM AS REDES SOCIAIS */
+      "flex-layout.row#redes-sociais-mobile", /* ROW COM AS REDES SOCIAIS */
+      "flex-layout.row#idiomas-mobile",
+      "flex-layout.row#direitos-mobile"
     ],
     "props": {
       "blockClass": "mobile"
@@ -20,17 +22,18 @@
     "children": ["flex-layout.col#bloco-vazio-mobile", "flex-layout.col#image-footer-mobile"],
     "props": {
       "blockClass": "white-block-mobile"
+      //  "width": "100%"
     }
   },
   "flex-layout.col#bloco-vazio-mobile": {
-    "props": {
-      "width": "30%"
-    }
+    // "props": {
+    //   "width": "20%"
+    // }
   },
   "flex-layout.col#image-footer-mobile": { /* IMAGEM DAS LUMINARIAS NO FOOTER */
     "children": ["image#footer-mobile"],
     "props": {
-      "width": "70%",
+    //  "width": "80%",
       "blockClass": "image-footer-mobile"
     }
   },  
@@ -40,14 +43,18 @@
     }
   },
   "flex-layout.row#logo-footer-mobile": { /* LOGO-FOOTER COREBIZ */
-    "children": ["image#logo-footer-mobile"]
+    "children": ["image#logo-footer-mobile"],
+    "props": {
+      "blockClass": "logo-footer-mobile"
+    }
   },
   "image#logo-footer-mobile": {
     "props": {
       "width": 80,
       "src": "assets/logo-footer.jpg",
-      "link": "https://www.corebiz.ag/pt/",
-      "blockClass": "logo-footer-mobile"
+      "link": {
+        "url": "https://www.corebiz.ag/pt/"
+      } 
     } 
   },
   "flex-layout.row#escritorios-br-ar-mobile": { /* ROW COM A PARTE DA LOCALIZACAO DOS ESCRITORIOS BRASIL E ARGENTINA */
@@ -57,9 +64,7 @@
     ],
     "props": {
       "verticalAlign": "CENTER",
-      "horizontalAlign": "CENTER",
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true,
+      "horizontalAlign": "LEFT",
       "blockClass": "escritorios-mobile"
     }
   },
@@ -69,11 +74,16 @@
        "flex-layout.col#chile"
     ],
     "props": {
-      "blockClass": "escritorios-mobile"
+      "verticalAlign": "CENTER",
+      "horizontalAlign": "LEFT",
+      "blockClass": "escritorios-mobile2"
     }
   },
   "flex-layout.row#seguir-mobile": {
-    "children": ["rich-text#seguir-mobile"]
+    "children": ["rich-text#seguir-mobile"],
+    "props": {
+      "blockClass": "seguir-mobile"
+    }
   },
   "rich-text#seguir-mobile": {
     "props": {
@@ -86,8 +96,67 @@
     "children": ["flex-layout.col#instagram", "flex-layout.col#facebook", "flex-layout.col#linkedin"],
     "props": {
       "blockClass": "social-mobile",
-      "width": "100%"
-
+      "horizontalAlign": "CENTER",
+      "verticalAlign": "CENTER"
+    }
+  },
+  "flex-layout.row#idiomas-mobile": {
+    "children": ["menu#idiomas"],
+    "props": {
+      "blockClass": "idiomas-mobile",
+      "horizontalAlign": "CENTER"
+    }
+  },
+  "menu#idiomas-mobile": {
+    "props": {
+      "blockClass": "menu-idiomas",
+      "items": [
+        {
+          "id": "pt",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "pt",
+            "text": "pt"
+          }
+        },
+        {
+          "id": "en",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/footer-about-us-en",
+            "noFollow": false,
+            "tagTitle": "en",
+            "text": "en"
+          }
+        },
+        {
+          "id": "es",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "es",
+            "text": "es"
+          }
+        }
+      ]
+    }
+  },
+  "flex-layout.row#direitos-mobile": { /* TEXTO DIREITOS RESERVADOS */
+    "children": ["rich-text#direitos"],
+    "props": {
+      "blockClass": "direitos-mobile"
     }
   },
 
@@ -110,13 +179,13 @@
   },
   "flex-layout.col#bloco-vazio": {
     "props": {
-      "width": "35%"
+      "width": "30%"
     }
   },
   "flex-layout.col#image-footer": { /* IMAGEM DAS LUMINARIAS NO FOOTER */
     "children": ["image#footer"],
     "props": {
-      "width": "65%"
+      "width": "70%"
     }
   },  
   "image#footer": {
@@ -156,7 +225,7 @@
   "rich-text#brasil": {
     "props": {
       "blockClass": "texto-footer",
-      "textPosition": "CENTER",
+      "textPosition": "LEFT",
       "text":" ##### Brasil \n Avenida Andrômeda, 2000.\n Bloco 6 e 8 Alphaville SP \n \n R. Ifigenia Maria de Oliveira,\n 3793 - Jr. Piratininga Franca SP"   
     }
   },
@@ -166,7 +235,7 @@
   "rich-text#argentina": {
     "props": {
       "blockClass": "texto-footer",
-      "textPosition": "CENTER",
+      "textPosition": "RIGHT",
       "text":" ##### Argentina \n Soler 5518, 3 Piso C1425BYF\n Palermo Hollywood CABA"   
     }
   },
@@ -176,7 +245,7 @@
   "rich-text#mexico": {
     "props": {
       "blockClass": "texto-footer",
-      "textPosition": "CENTER",
+      "textPosition": "LEFT",
       "text":" ##### Mexico \n Blvd. Miguel de Cervantes\n Saavedra 169, Granada, Miguel\n Hidalgo, 11520 Ciudad de\n México, CDMX"   
     }
   },
@@ -186,7 +255,7 @@
   "rich-text#chile": {
     "props": {
       "blockClass": "texto-footer",
-      "textPosition": "CENTER",
+      "textPosition": "RIGHT",
       "text":" ##### Chile \n Roberto del Río 1137,\n Providencia."   
     }
   },
@@ -205,31 +274,22 @@
       }
     } 
   },
-  "flex-layout.row#social-idioma": {
+  "flex-layout.row#social-idioma": { /* ROW COM A PARTE DAS REDES SOCIAIS, MENU IDIOMAS E DIREITOS AUTORAIS */
     "children": [
-      "flex-layout.col#spacer",
       "flex-layout.col#social-seguir", 
-      "flex-layout.col#spacer",
-      "flex-layout.col#spacer",
-      "flex-layout.col#spacer",
-      "flex-layout.col#idioma", 
-      "flex-layout.col#spacer"
-
+      "flex-layout.col#idiomas"
     ],
     "props": {
       "blockClass": "social-idioma",
       "verticalAlign": "CENTER",
-      "horizontalAlign": "CENTER",
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": true,
-      "width": "100%"
+      "horizontalAlign": "CENTER"
     }
   },
-  "flex-layout.col#social-seguir": {
+  "flex-layout.col#social-seguir": { /* PARTE DO TEXTO SIGA A GENTE E DAS REDES SOCIAIS */
     "children": ["flex-layout.row#seguir", "flex-layout.row#redes-sociais"],
     "props": {
       "blockClass": "social-seguir",
-      "width": "50%"
+      "width": "45%"
     }
   },
   "flex-layout.row#seguir": {
@@ -247,13 +307,10 @@
     "props": {
       "blockClass": "social",
       "horizontalAlign": "CENTER"
-
     }
   },
-  "flex-layout.col#instagram": {
-    "children": ["image#instagram"],
-    "props": {
-    }
+  "flex-layout.col#instagram": { /* INSTAGRAM */
+    "children": ["image#instagram"]
   },
   "image#instagram": {
     "props": {
@@ -264,24 +321,21 @@
       }
     } 
   },
-  "flex-layout.col#facebook": {
-    "children": ["image#facebook"],
-    "props": {
-    }
+  "flex-layout.col#facebook": { /* FACEBOOK */
+    "children": ["image#facebook"]
   },
   "image#facebook": {
     "props": {
-      "width": 10,
+      "width": 20,
+      "blockClass": "image-facebook",
       "src": "assets/facebook.svg",
       "link": { 
         "url":"https://www.facebook.com/corebiz.ag/" 
       }
     } 
   },
-  "flex-layout.col#linkedin": {
-    "children": ["image#linkedin"],
-    "props": {
-    }
+  "flex-layout.col#linkedin": { /* LINKEDIN */
+    "children": ["image#linkedin"]
   },
   "image#linkedin": {
     "props": {
@@ -292,10 +346,64 @@
       }
     } 
   },
-  "flex-layout.col#idioma": {
-    "children": [/* "flex-layout.row#idiomas",  */"flex-layout.row#direitos"],
+  "flex-layout.col#idiomas": { /* MENU IDIOMAS E TEXTO DIREITOS RESERVADOS */
+    "children": ["flex-layout.row#idiomas", "flex-layout.row#direitos"],
     "props": {
-      "width": "50%"
+      "width": "55%"
+      
+    }
+  },
+  "flex-layout.row#idiomas": { /* MENU IDIOMAS */
+    "children": ["menu#idiomas"],
+    "props": {
+      "blockClass": "idiomas",
+      "horizontalAlign": "LEFT"
+    }
+  },
+  "menu#idiomas": {
+    "props": {
+      "blockClass": "menu-idiomas",
+      "items": [
+        {
+          "id": "pt", /* PORTUGUES */
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "pt",
+            "text": "pt"
+          }
+        },
+        {
+          "id": "en", /* INGLES */
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us-en",
+            "noFollow": false,
+            "tagTitle": "en",
+            "text": "en"
+          }
+        },
+        {
+          "id": "es", /* ESPANHOL */
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us-es",
+            "noFollow": false,
+            "tagTitle": "es",
+            "text": "es"
+          }
+        }
+      ]
     }
   },
   "flex-layout.row#direitos": { /* TEXTO DIREITOS RESERVADOS */
@@ -304,7 +412,7 @@
   "rich-text#direitos": { 
     "props": {
       "blockClass": "texto-direitos",
-      "textPosition": "CENTER",
+      "textPosition": "LEFT",
       "text": "direitos reservados.corebiz 2021"   
     }
   }
