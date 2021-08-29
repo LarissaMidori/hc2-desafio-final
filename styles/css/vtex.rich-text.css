@@ -1,6 +1,7 @@
-/*FOOTER*/
 
-/* ==== DESKTOP ==== */
+/* ===== FOOTER =====*/
+
+/* === DESKTOP === */
 
 .heading--texto-footer { /* TEXTO COM OS NOMES DOS PAISES */
     color: #fff;
@@ -8,8 +9,8 @@
 
 .paragraph--texto-footer {  /* TEXTO COM OS ENDEREÇOS DOS ESCRITORIOS */
     color: #fff;
-    font-family: sans-serif;
-    font-size: .8rem;
+    font-family: 'Circular Std Medium', sans-serif;
+    font-size: .7rem;
 }
 
 .heading--texto-seguir { /* TEXTO SIGA A GENTE */
@@ -22,3 +23,23 @@
     font-size: .9rem;
 }
 
+/* ===== WORLDWIDE ===== */
+
+.paragraph--texto-worldwide {  /* TEXTO COREBIZ WORLDWIDE */
+    font-size: 3rem;
+    color: #000;
+}
+
+.heading--texto-paises {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.paragraph--texto-paises {
+    color: #000;
+    font-size: .9rem;
+}
+
+.link--texto-paises {
+    color: #000;
+}

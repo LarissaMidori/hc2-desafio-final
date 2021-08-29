@@ -9,7 +9,7 @@
       "flex-layout.row#logo-footer-mobile", /* LOGO-FOOTER COREBIZ */
       "flex-layout.row#escritorios-br-ar-mobile", /* ROW COM A PARTE DA LOCALIZACAO DOS ESCRITORIOS BRASIL E ARGENTINA */
       "flex-layout.row#escritorios-mx-ch-mobile", /* ROW COM A PARTE DA LOCALIZACAO DOS ESCRITORIOS MEXICO E CHILE */
-      "flex-layout.row#seguir-mobile",
+      "flex-layout.row#seguir-mobile", /* SIGA A GENTE */
       "flex-layout.row#redes-sociais-mobile", /* ROW COM AS REDES SOCIAIS */
       "flex-layout.row#botao-topo-mobile",
       "flex-layout.row#idiomas-mobile",
@@ -175,7 +175,6 @@
 /* ==== DESKTOP ==== */
   "footer-layout.desktop": { 
     "children": [
-      "locale-switcher",
       "flex-layout.row#block-image",
       "flex-layout.row#escritorios", /* ROW COM A PARTE DA LOCALIZACAO DOS ESCRITORIOS E LOGO */
       "flex-layout.row#social-idioma" /* ROW COM AS REDES SOCIAIS e ESCOLHA DE IDIOMA  e DIREITOS RESERVADOS*/
