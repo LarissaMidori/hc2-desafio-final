@@ -11,6 +11,7 @@
       "flex-layout.row#escritorios-mx-ch-mobile", /* ROW COM A PARTE DA LOCALIZACAO DOS ESCRITORIOS MEXICO E CHILE */
       "flex-layout.row#seguir-mobile",
       "flex-layout.row#redes-sociais-mobile", /* ROW COM AS REDES SOCIAIS */
+      "flex-layout.row#botao-topo-mobile",
       "flex-layout.row#idiomas-mobile",
       "flex-layout.row#direitos-mobile"
     ],
@@ -22,13 +23,9 @@
     "children": ["flex-layout.col#bloco-vazio-mobile", "flex-layout.col#image-footer-mobile"],
     "props": {
       "blockClass": "white-block-mobile"
-      //  "width": "100%"
     }
   },
   "flex-layout.col#bloco-vazio-mobile": {
-    // "props": {
-    //   "width": "20%"
-    // }
   },
   "flex-layout.col#image-footer-mobile": { /* IMAGEM DAS LUMINARIAS NO FOOTER */
     "children": ["image#footer-mobile"],
@@ -131,7 +128,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/footer-about-us-en",
+            "href": "/about-us-en",
             "noFollow": false,
             "tagTitle": "en",
             "text": "en"
@@ -144,7 +141,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/about-us",
+            "href": "/about-us-es",
             "noFollow": false,
             "tagTitle": "es",
             "text": "es"
@@ -159,10 +156,26 @@
       "blockClass": "direitos-mobile"
     }
   },
+  "flex-layout.row#botao-topo-mobile": {
+    "children": ["image#botao-topo-mobile"],
+    "props": {
+      "blockClass": "botao-topo-mobile"
+    }
+  },
+  "image#botao-topo-mobile": {
+    "props": {
+      "width": 40,
+      "src": "assets/topo-mobile.jpg",
+      "link": { 
+        "url":"/" 
+      }
+    } 
+  },
 
 /* ==== DESKTOP ==== */
   "footer-layout.desktop": { 
     "children": [
+      "locale-switcher",
       "flex-layout.row#block-image",
       "flex-layout.row#escritorios", /* ROW COM A PARTE DA LOCALIZACAO DOS ESCRITORIOS E LOGO */
       "flex-layout.row#social-idioma" /* ROW COM AS REDES SOCIAIS e ESCOLHA DE IDIOMA  e DIREITOS RESERVADOS*/
@@ -277,7 +290,8 @@
   "flex-layout.row#social-idioma": { /* ROW COM A PARTE DAS REDES SOCIAIS, MENU IDIOMAS E DIREITOS AUTORAIS */
     "children": [
       "flex-layout.col#social-seguir", 
-      "flex-layout.col#idiomas"
+      "flex-layout.col#idiomas",
+      "flex-layout.col#botao-topo"
     ],
     "props": {
       "blockClass": "social-idioma",
@@ -289,7 +303,7 @@
     "children": ["flex-layout.row#seguir", "flex-layout.row#redes-sociais"],
     "props": {
       "blockClass": "social-seguir",
-      "width": "45%"
+      "width": "30%"
     }
   },
   "flex-layout.row#seguir": {
@@ -322,12 +336,14 @@
     } 
   },
   "flex-layout.col#facebook": { /* FACEBOOK */
-    "children": ["image#facebook"]
+    "children": ["image#facebook"],
+    "props": {
+      "blockClass": "image-facebook"
+    }
   },
   "image#facebook": {
     "props": {
       "width": 20,
-      "blockClass": "image-facebook",
       "src": "assets/facebook.svg",
       "link": { 
         "url":"https://www.facebook.com/corebiz.ag/" 
@@ -349,7 +365,8 @@
   "flex-layout.col#idiomas": { /* MENU IDIOMAS E TEXTO DIREITOS RESERVADOS */
     "children": ["flex-layout.row#idiomas", "flex-layout.row#direitos"],
     "props": {
-      "width": "55%"
+      "width": "65%",
+      "blockClass": "idiomas-direitos"
       
     }
   },
@@ -415,6 +432,21 @@
       "textPosition": "LEFT",
       "text": "direitos reservados.corebiz 2021"   
     }
+  },
+  "flex-layout.col#botao-topo": {
+    "children": ["image#botao-topo"],
+    "props": {
+      "width": "5%",
+      "blockClass": "botao-topo"
+    }
+  },
+  "image#botao-topo": {
+    "props": {
+      "width": 40,
+      "src": "assets/topo-mobile.jpg",
+      "link": { 
+        "url":"/" 
+      }
+    } 
   }
-
 }

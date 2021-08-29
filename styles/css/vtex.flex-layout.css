@@ -23,7 +23,7 @@
 
 .flexRow--social-idioma{ /* REDES SOCIAIS, IDIOMAS E DIREITOS AUTORAIS */
 
-    background: rgb(117, 30, 30);
+    background: #000;
     width: 95%;
     padding-top: 4%;
     padding-bottom: 1%;
@@ -39,20 +39,25 @@
     padding-bottom: 2%;
 } 
 
+.flexCol--idiomas-direitos { /* COL DO MENUS IDIOMAS E DIREITOS RESERVADOS */
+    padding-left: 25%;
+}
 
-/* ==== MOBILE ==== */
+.flexCol--botao-topo {  /* BOTAO PARA VOLTAR AO TOPO*/
+    align-items: center;
+}/* ==== MOBILE ==== */
 
 .flexCol--image-footer-mobile { /* IMAGEM LUMINARIAS */
     padding-left: 55%;
 }
 
 .flexRow--white-block-mobile { /* FLEXROW CONTENDO A PARTE BRANCA E A IMAGEM DA LUMINARIA*/
-    background: rgb(209, 89, 89);
+    background: #000;
     width: 100%;
 }
 
 .flexRow--logo-footer-mobile { /* LOGO NO FOOTER */
-    background: rgb(201, 116, 168);
+    background: #000;
     padding-top: 6%;
     padding-bottom: 8%;
     position: absolute;
@@ -62,7 +67,7 @@
 }
 
 .flexRow--escritorios-mobile { /* ENDERECOS ESCRITORIOS */
-    background: rgb(87, 109, 82);
+    background: #000;
     padding-top: 60px;
     padding-bottom: 20px;
     width: 100%;
@@ -71,7 +76,7 @@
 }
 
 .flexRow--escritorios-mobile2 { /* ENDERECOS ESCRITORIOS */
-    background: rgb(183, 136, 221);
+    background: #000;
     padding-bottom: 40px;
     width: 100%;
     padding-right: 5%;
@@ -81,21 +86,34 @@
 .flexRow--seguir-mobile { /* ROW COM O TEXTO SIGA A GENTE */
     display: flex;
     text-align: center;
+    background: #000;
 }
 
 .flexRow--social-mobile { 
     display:flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5%;
+    background: #000;
+}
+
+.flexRow--botao-topo-mobile { /* BOTAO PARA VOLTAR AO TOPO*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    background: #000;
 }
 
 .flexRow--idiomas-mobile { /* ROW COM O MENU DE IDIOMAS */
     display: flex;
     align-items: center;
+    background: #000;
 }
 
-.flexRow--direitos-mobile {
+.flexRow--direitos-mobile { /* DIREITOS RESERVADOS */
     display: flex;
     text-align: center;
+    padding-bottom: 5%;
+    background: #000;
 }
-
